@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Form, Input, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Group2 from "../images/ai.jpg";
 import Spinner from "../components/Spinner";
 import "../styles/Loginpage.css";
 const Login = () => {
-  const img =
-    "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
+  const img = Group2;
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   //from submit
@@ -38,13 +38,13 @@ const Login = () => {
       <div className="login-page ">
         {loading && <Spinner />}
         <div className="row container">
-          <h1>ExpsanseMaster</h1>
-          <div className="col-md-6">
+          <h1>ExpenseMaster - Master your Expenses</h1>
+          <div className="col-md-6 login-image">
             <img src={img} alt="login-img" width={"100%"} height="100%" />
           </div>
-          <div className="col-md-4 login-form">
+          <div className="col-md-6 login-form">
             <Form layout="vertical" onFinish={submitHandler}>
-              <h1>Login Form</h1>
+              <h2>Login Form</h2>
 
               <Form.Item label="Email" name="email">
                 <Input type="email" required />

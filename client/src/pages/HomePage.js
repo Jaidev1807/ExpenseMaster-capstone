@@ -148,7 +148,11 @@ const HomePage = () => {
       <div className="filters">
         <div>
           <h6>Select Frequency</h6>
-          <Select value={frequency} onChange={(values) => setFrequency(values)}>
+          <Select
+            value={frequency}
+            onChange={(values) => setFrequency(values)}
+            style={{ backgroundColor: "#f1faee" }}
+          >
             <Select.Option value="7">LAST 1 Week</Select.Option>
             <Select.Option value="30">LAST 1 Month</Select.Option>
             <Select.Option value="365">LAST 1 year</Select.Option>

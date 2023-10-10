@@ -5,11 +5,14 @@
 }
 
 .content {
+  min-height: 60vh;
   height: 100%;
+  background-color: #f1faee;
 }
 
 /* transection page */
 .filters {
+  background-color: #f1faee;
   display: flex;
   width: 90%;
   margin: auto;
@@ -49,8 +52,12 @@
   border-radius: 30 !important;
 }
 .custom-table thead th {
-  background: lightblue !important;
+  background: #ff6700 !important;
+  color: #f1faee;
+  font-weight: bold;
 }
 .custom-table tbody td {
-  background: lightgray !important;
+  background: #457b9d !important;
+  color: #f1faee;
+  font-weight: bold;
 }

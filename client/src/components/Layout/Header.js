@@ -37,15 +37,20 @@ const Header = () => {
             <Link className="navbar-brand" to="/">
               ExpenseMaster
             </Link>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-0 mb-lg-0">
               <li className="nav-item">
-                {" "}
-                <h6 className="nav-link ">
-                  <UserOutlined /> {loginUser && loginUser.name}
-                </h6>{" "}
+                <p className="user-logo">
+                  <UserOutlined />
+                </p>
               </li>
               <li className="nav-item">
-                <button className="btn btn-danger" onClick={logoutHandler}>
+                <h6 className="nav-link ">{loginUser && loginUser.name}</h6>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="btn btn logout-button"
+                  onClick={logoutHandler}
+                >
                   Logout
                 </button>
               </li>

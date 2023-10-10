@@ -1,17 +1,42 @@
 .navbar {
-  background-color: #6f4e3742 !important;
+  background-color: #1d3557 !important;
 }
 .navbar .navbar-brand {
-  color: #6f4e37 !important;
+  color: #e5e5e5 !important;
   font-weight: bold;
   font-size: 1.5rem;
+  font-size: x-large;
 }
-
+.nav-item {
+  margin-top: 10px;
+}
 .nav-link {
   font-size: 1.2rem;
+  font-weight: bold;
+  color: #e5e5e5 !important;
 }
-
+.user-logo {
+  padding: 10px;
+  color: #e5e5e5 !important;
+  font-weight: bold;
+}
 .navbar h6 {
   margin-top: 0px;
   margin-right: 20px;
+  align-items: center;
+  padding: 12px;
+}
+
+.logout-button {
+  background-color: #e63946;
+  color: #e5e5e5 !important;
+  font-weight: bold;
+  padding: 6px 14px; /* Adjust padding as needed */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.logout-button:hover {
+  background-color: #c32f3e;
 }

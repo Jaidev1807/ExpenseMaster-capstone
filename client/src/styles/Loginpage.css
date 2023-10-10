@@ -5,27 +5,44 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(to right, #f1faee, #a8dadc, #457b9d);
+}
+.container {
+  width: 80%;
+  margin-top: -10px;
 }
 .login-page h1 {
-}
-.login-form {
-  background-color: #b9bcccb6;
-  margin-left: -15px;
-  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #1d3557;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.login-form h1 {
+.login-image img {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.login-form {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: -15px;
+  padding: 30px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.login-form h2 {
   text-align: center;
   font-weight: bold;
   margin: 30px;
-  color: #344265;
+  color: #1d3557;
 }
 
 .login-form .ant-form-item-label label {
-  color: #344265 !important;
+  color: #1d3557;
+  font-weight: bold;
 }
 .login-form button {
-  background-color: #344265;
+  background-color: #1d3557;
   color: white;
   outline: none;
 }
@@ -34,7 +51,8 @@
   color: white;
 }
 .login-form a {
-  color: #344265 !important;
+  color: #1d3557;
+  font-weight: bold;
 }
 
 .login-form a:hover {
