@@ -70,3 +70,23 @@
 .card-body {
   background-color: #f1faee;
 }
+.custom-select .ant-select-selector {
+  background-color: #f1faee;
+}
+.custom-dropdown .ant-select-item-option {
+  background-color: #f1faee;
+}
+
+.add-button {
+  background-color: #8ac926;
+  color: #e5e5e5 !important;
+  font-weight: bold;
+  padding: 8px 18px; /* Adjust padding as needed */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.add-button:hover {
+  background-color: #639513;
+}

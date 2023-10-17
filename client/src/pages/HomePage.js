@@ -18,6 +18,12 @@ const tableStyle = {
   margin: "auto",
   borderRadius: "30px",
 };
+
+const selectStyle = {
+  backgroundColor: "#f1faee", // Background color
+};
+
+const selectClass = "custom-select";
 const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -151,7 +157,8 @@ const HomePage = () => {
           <Select
             value={frequency}
             onChange={(values) => setFrequency(values)}
-            style={{ backgroundColor: "#f1faee" }}
+            popupClassName={selectClass}
+            dropdownStyle={{ backgroundColor: "#f1faee" }}
           >
             <Select.Option value="7">LAST 1 Week</Select.Option>
             <Select.Option value="30">LAST 1 Month</Select.Option>
@@ -167,7 +174,11 @@ const HomePage = () => {
         </div>
         <div className="filter-tab ">
           <h6>Select Type</h6>
-          <Select value={type} onChange={(values) => setType(values)}>
+          <Select
+            value={type}
+            onChange={(values) => setType(values)}
+            style={selectStyle}
+          >
             <Select.Option value="all">ALL</Select.Option>
             <Select.Option value="income">INCOME</Select.Option>
             <Select.Option value="expense">EXPENSE</Select.Option>
@@ -189,7 +200,7 @@ const HomePage = () => {
         </div>
         <div>
           <button
-            className="btn btn-primary"
+            className="btn btn add-button"
             onClick={() => setShowModal(true)}
           >
             Add New
